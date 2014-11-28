@@ -6,11 +6,11 @@
 			<legend>Delete User</legend>
 			<div class="form-group">
 				<form:label path="name" class="col col-sm-2 control-label">User Name</form:label>
-				<div class="col col-sm-10">${f:h(userForm.name)}</div>
+				<div class="col col-sm-10">${userForm.name}</div>
 			</div>
 			<div class="form-group">
 				<form:label path="email" class="col col-sm-2 control-label">E-mail</form:label>
-				<div class="col col-sm-10">${f:h(userForm.email)}</div>
+				<div class="col col-sm-10">${userForm.email}</div>
 			</div>
 			<div class="form-group">
 				<form:label path="birth" class="col col-sm-2 control-label">User Birth</form:label>
@@ -29,8 +29,8 @@
 			</div>
 			<div class="form-group">
 				<div class="col col-sm-10 col-sm-offset-2">
-					<form:hidden path="id" value="${f:h(user.id)}" />
-					<form:hidden path="version" value="${f:h(user.version)}" />
+					<form:hidden path="id" value="${user.id}" />
+					<form:hidden path="version" value="${user.version}" />
 					<input type="submit" class="btn btn-danger" name="delete"
 						value="Delete" /> <input type="submit" class="btn btn-default"
 						name="redirectToList" value="Back to List" />

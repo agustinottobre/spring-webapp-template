@@ -3,7 +3,7 @@
 ${request}
 <div class="col-sm-12">
 	<c:if test="${not empty errorMessage}">
-		<div class="alert alert-error">${f:h(errorMessage)}</div>
+		<div class="alert alert-error">${errorMessage}</div>
 	</c:if>
 
 	<div class="well">
@@ -30,14 +30,14 @@ ${request}
 		<tbody>
 			<c:forEach var="user" items="${page.content}">
 				<tr>
-					<td>${f:h(user.id)}</td>
-					<td>${f:h(user.name)}</td>
-					<td>${f:h(user.email)}</td>
-					<td>${f:h(user.birth)}</td>
+					<td>${user.id}</td>
+					<td>${user.name}</td>
+					<td>${user.email}</td>
+					<td>${user.birth}</td>
 					<td><form:form
 							action="${pageContext.request.contextPath}/user"
 							class="form-inline">
-							<input type="hidden" name="id" value="${f:h(user.id)}" />
+							<input type="hidden" name="id" value="${user.id}" />
 							<input type="submit" class="btn btn-default"
 								name="redirectToUpdate" value="Update" />
 							<input type="submit" class="btn btn-danger"
@@ -48,5 +48,5 @@ ${request}
 		</tbody>
 	</table>
 
-	<util:pagination page="${page}" query="name=${f:h(param.name)}" />
+	<util:pagination page="${page}" query="name=${param.name}" />
 </div>

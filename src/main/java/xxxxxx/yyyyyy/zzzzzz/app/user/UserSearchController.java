@@ -5,7 +5,7 @@ import javax.validation.Valid;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.data.web.PageableDefaults;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.StringUtils;
@@ -30,7 +30,7 @@ public class UserSearchController {
     }
 
     @RequestMapping("list")
-    public String list(@PageableDefaults Pageable pageable, Model model) {
+    public String list(@PageableDefault Pageable pageable, Model model) {
         Page<User> page = userService.findAll(pageable);
         model.addAttribute("page", page);
         return "user/list";
@@ -38,7 +38,7 @@ public class UserSearchController {
 
     @RequestMapping("search")
     public String search(@Valid UserSearchForm form, BindingResult result,
-            @PageableDefaults Pageable pageable, Model model) {
+            @PageableDefault Pageable pageable, Model model) {
         if (result.hasErrors()) {
             return "user/list";
         }

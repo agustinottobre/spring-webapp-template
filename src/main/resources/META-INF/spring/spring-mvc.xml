@@ -9,10 +9,10 @@
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
         http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
 
-    <mvc:annotation-driven enableMatrixVariables="false">
+    <mvc:annotation-driven>
         <mvc:argument-resolvers>
             <bean
-                class="org.springframework.data.web.PageableArgumentResolver">
+                class="org.springframework.data.web.PageableHandlerMethodArgumentResolver">
             </bean>
         </mvc:argument-resolvers>
     </mvc:annotation-driven>

@@ -20,7 +20,7 @@ body {
     <jsp:include page="layout/header.jsp" />
       <div class="col-sm-12">
         <p class="alert alert-danger">
-          [<c:choose><c:when test="${not empty exceptionCode}">${f:h(exceptionCode)}</c:when><c:otherwise>${f:h(param.exceptionCode)}</c:otherwise></c:choose>]
+          [<c:choose><c:when test="${not empty exceptionCode}">${exceptionCode}</c:when><c:otherwise>${param.exceptionCode}</c:otherwise></c:choose>]
           Your request is not found...<br /> <a
             href="${pageContext.request.contextPath}" class="btn btn-default">Go
             to TOP</a>

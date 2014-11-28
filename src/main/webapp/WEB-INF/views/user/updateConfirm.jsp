@@ -6,7 +6,7 @@
 			<div class="form-group">
 				<form:label path="name" class="col col-sm-2 control-label">User Id</form:label>
 				<div class="col col-sm-10">
-					${f:h(userForm.id)}
+					${userForm.id}
 					<form:input path="id" type="hidden" />
 					<form:errors path="id" cssClass="text-danger" />
 				</div>
@@ -14,7 +14,7 @@
 			<div class="form-group">
 				<form:label path="name" class="col col-sm-2 control-label">User Name</form:label>
 				<div class="col col-sm-10">
-					${f:h(userForm.name)}
+					${userForm.name}
 					<form:hidden path="name" />
 					<form:errors path="name" cssClass="text-danger" />
 				</div>
@@ -22,7 +22,7 @@
 			<div class="form-group">
 				<form:label path="email" class="col col-sm-2 control-label">E-mail</form:label>
 				<div class="col col-sm-10">
-					${f:h(userForm.email)}
+					${userForm.email}
 					<form:hidden path="email" />
 					<form:errors path="email" cssClass="text-danger" />
 				</div>

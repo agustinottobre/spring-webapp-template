@@ -6,7 +6,7 @@
 			<div class="form-group">
 				<form:label path="name" class="col col-sm-2 control-label">User Id</form:label>
 				<div class="col col-sm-10">
-					${f:h(userForm.id)}
+					${userForm.id}
 					<form:input path="id" type="hidden" />
 					<form:errors path="id" cssClass="text-danger" />
 				</div>

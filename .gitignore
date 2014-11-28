@@ -1,13 +1,33 @@
-log
-target
-.settings
+src/main/webapp/upload/*
+*~
+#template/*zip
+
+*.class
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+# Eclipse
 .classpath
 .project
-.springBeans
-src/main/webapp/upload/*
-message
-mecab-ipadic*
-*~
-.git
-.idea
+.settings/
+
+# Intellij
+.idea/
+*.iml
+*.iws
+
+# Mac
 .DS_Store
+
+# Maven
+log/
+target/

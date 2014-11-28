@@ -21,8 +21,8 @@ body {
       <div class="col-sm-12">
         <p class="alert alert-danger">
           <c:choose>
-            <c:when test="${not empty exceptionCode}">[${f:h(exceptionCode)}]</c:when>
-            <c:when test="${not empty param.exceptionCode}">[${f:h(param.exceptionCode)}]</c:when>
+            <c:when test="${not empty exceptionCode}">[${exceptionCode}]</c:when>
+            <c:when test="${not empty param.exceptionCode}">[${param.exceptionCode}]</c:when>
             <c:otherwise>[e.tm.9999]</c:otherwise>
           </c:choose>
           Error...<br /> <a

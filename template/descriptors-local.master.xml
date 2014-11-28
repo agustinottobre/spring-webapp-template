@@ -4,7 +4,7 @@
 	      name="Spring Web Application Template Project" kind="template"
 	      local="false"
 	      version="${version}" size="415000"
-	      url="file:////Users/maki/git/spring-webapp-template/template/spring-webapp-template-${version}.zip">
+	      url="file:////home/neco/dev/workspace-sts/spring-webapp-template/template/spring-webapp-template-${version}.zip">
     <description>
       Creates a new Spring Web Application Template Project using Spring MVC and Spring Data
     </description>

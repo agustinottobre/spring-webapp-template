@@ -4,7 +4,7 @@
 	      name="Spring Web Application Template Project" kind="template"
 	      local="false"
 	      version="${version}" size="415000"
-	      url="https://github.com/making/spring-webapp-template/raw/master/template/spring-webapp-template-${version}.zip">
+	      url="https://github.com/agustinottobre/spring-webapp-template/raw/master/template/spring-webapp-template-${version}.zip">
     <description>
       Creates a new Spring Web Application Template Project using Spring MVC and Spring Data
     </description>
