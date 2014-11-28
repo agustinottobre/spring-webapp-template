@@ -20,7 +20,7 @@ cp -r $BASE/../src $TMPLNAME
 cp $BASE/../pom.xml $TMPLNAME
 cp $BASE/../bower.json $TMPLNAME
 cp $BASE/../.bowerrc $TMPLNAME
-zip -qr $TMPLNAME.zip $TMPLNAME/*
+zip -qr $TMPLNAME.zip $TMPLNAME
 rm -rf $TMPLNAME
 
 cd $BASE
