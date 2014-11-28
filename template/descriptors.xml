@@ -3,8 +3,8 @@
   <descriptor id="xxxxxx.yyyyyy.zzzzzz"
 	      name="Spring Web Application Template Project" kind="template"
 	      local="false"
-	      version="1.0.0.20141128040432" size="415000"
-	      url="https://github.com/agustinottobre/spring-webapp-template/raw/master/template/spring-webapp-template-1.0.0.20141128040432.zip">
+	      version="1.0.0.20141128183957" size="415000"
+	      url="https://github.com/agustinottobre/spring-webapp-template/raw/master/template/spring-webapp-template-1.0.0.20141128183957.zip">
     <description>
       Creates a new Spring Web Application Template Project using Spring MVC and Spring Data
     </description>

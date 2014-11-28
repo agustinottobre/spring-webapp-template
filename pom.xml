@@ -23,15 +23,32 @@
                 <artifactId>maven-license-plugin</artifactId>
                 <version>${com.google.code.maven-license-plugin.version}</version>
                 <configuration>
+					<properties>
+			            <owner>Agustin Ottobre</owner>
+			            <email>agustin.ottobre@gmail.com</email>
+			        </properties>
+			        <encoding>${encoding}</encoding>
                     <header>src/etc/header.txt</header>
-                    <includes>
-                        <include>src/**/*.java</include>
-                    </includes>
-                    <encoding>${encoding}</encoding>
                     <headerDefinitions>
                         <headerDefinition>src/etc/header-definition.xml</headerDefinition>
                     </headerDefinitions>
+                    <includes>
+                        <include>src/**/*.java</include>
+                    </includes>
+			        <excludes>
+			            <exclude>**/README</exclude>
+			            <exclude>src/main/resources/**</exclude>
+			            <exclude>src/test/resources/**</exclude>
+			        </excludes>
                 </configuration>
+<!-- 			    <executions> -->
+<!-- 			        <execution> -->
+<!-- 			            <goals> -->
+<!-- 			            	<goal>check</goal> -->
+<!-- 			            </goals> -->
+<!-- 			        </execution> -->
+<!-- 			    </executions> -->
+<!-- or by command line mvn license:check , format or remove -->
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
