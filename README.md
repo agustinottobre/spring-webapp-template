@@ -19,6 +19,10 @@ This template project uses
 * jQuery
 * Bootstrap
 
+After creating a new project from this template: 
+Configure project as a maven project (in eclipse, project -> configure -> maven)
+Use bower update on project's root dir to install front end vendor dependencies
+
 ![screen shot][2]
 
 
